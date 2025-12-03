@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://de21gadp3ouci"]
+
+[ext_resource type="Script" uid="uid://c63hccad5pp4g" path="res://menu/menu.gd" id="1_g18jx"]
+[ext_resource type="Texture2D" uid="uid://b5duaa14dbuub" path="res://menu/art/menu-bg.png" id="1_j0t7f"]
+
+[sub_resource type="Theme" id="Theme_6nwqt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbjm4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svuvw"]
+bg_color = Color(1, 1, 1, 0.3019608)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juveg"]
+bg_color = Color(1, 1, 1, 0.20392157)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g18jx"]
+bg_color = Color(0.9941737, 0.35788846, 0.4236439, 0.45882353)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nwqt"]
+bg_color = Color(1, 1, 1, 0.21176471)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_g18jx")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_j0t7f")
+expand_mode = 3
+
+[node name="Level1Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 374.0
+offset_right = 750.0
+offset_bottom = 657.0
+theme = SubResource("Theme_6nwqt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pbjm4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_svuvw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_juveg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_g18jx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6nwqt")
