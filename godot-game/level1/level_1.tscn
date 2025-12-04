@@ -1,17 +1,213 @@
-[gd_scene load_steps=5 format=3 uid="uid://gknarqs2e6u7"]
+[gd_scene load_steps=30 format=3 uid="uid://gknarqs2e6u7"]
 
+[ext_resource type="Texture2D" uid="uid://dkoc1clcp6fw1" path="res://level1/art/level1-main.png" id="1_4hwfk"]
 [ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level1/art/player-trimmed-canvas.png" id="1_h77vs"]
 [ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level1/vacuum.gd" id="1_xpeh6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hwfk"]
+size = Vector2(633, 87)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8of2"]
+size = Vector2(391, 78)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpbvg"]
+size = Vector2(355, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh48n"]
+size = Vector2(595, 67)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atmxi"]
+size = Vector2(210, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsgr5"]
+size = Vector2(261, 77)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veygh"]
+size = Vector2(174, 73)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1vqm"]
+size = Vector2(1163, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wflk4"]
+size = Vector2(611, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esv77"]
+size = Vector2(116, 238)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hevts"]
+size = Vector2(139, 228)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wq6b"]
+size = Vector2(61, 677)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3wtg"]
+size = Vector2(65, 354)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx3jx"]
+size = Vector2(62, 597)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8eyt"]
+size = Vector2(62, 461)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0qb0"]
+size = Vector2(59, 219)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q62cn"]
+size = Vector2(65, 337)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6nmd"]
+size = Vector2(87, 801)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fww16"]
+size = Vector2(317, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjslg"]
+size = Vector2(372, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwwve"]
+size = Vector2(157, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_faqjo"]
+size = Vector2(175, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl3v4"]
+size = Vector2(196, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_po4om"]
+size = Vector2(149, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44tn6"]
+size = Vector2(349, 26)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h77vs"]
 size = Vector2(120, 34)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpeh6"]
-size = Vector2(946, 48)
-
 [node name="Level1" type="Node2D"]
 
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_4hwfk")
+centered = false
+
+[node name="WallsEtc" type="Node2D" parent="."]
+
+[node name="FloorsCeilings" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(297, 1047)
+shape = SubResource("RectangleShape2D_4hwfk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(802.5, 1051)
+shape = SubResource("RectangleShape2D_v8of2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1168.5, 1054)
+shape = SubResource("RectangleShape2D_gpbvg")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1631.5, 1059.5)
+shape = SubResource("RectangleShape2D_mh48n")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1272, 808)
+shape = SubResource("RectangleShape2D_atmxi")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(174.5, 669.5)
+shape = SubResource("RectangleShape2D_bsgr5")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1811, 220)
+shape = SubResource("RectangleShape2D_veygh")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(635.5, 29)
+shape = SubResource("RectangleShape2D_s1vqm")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1558.5, 25.5)
+shape = SubResource("RectangleShape2D_wflk4")
+
+[node name="Fridges" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Fridges"]
+position = Vector2(605, 908)
+shape = SubResource("RectangleShape2D_esv77")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Fridges"]
+position = Vector2(926.5, 912)
+shape = SubResource("RectangleShape2D_hevts")
+
+[node name="Walls" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(26.5, 336.5)
+shape = SubResource("RectangleShape2D_2wq6b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(25.5, 847)
+shape = SubResource("RectangleShape2D_w3wtg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(989, 725.5)
+shape = SubResource("RectangleShape2D_sx3jx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1236, 227.5)
+shape = SubResource("RectangleShape2D_r8eyt")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1347.5, 933.5)
+shape = SubResource("RectangleShape2D_d0qb0")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1894.5, 149.5)
+shape = SubResource("RectangleShape2D_q62cn")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1886.5, 647.5)
+shape = SubResource("RectangleShape2D_f6nmd")
+
+[node name="Platforms" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(601.5, 668)
+shape = SubResource("RectangleShape2D_fww16")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(446, 450)
+shape = SubResource("RectangleShape2D_yjslg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1400.5, 285)
+shape = SubResource("RectangleShape2D_wwwve")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1411.5, 496)
+shape = SubResource("RectangleShape2D_faqjo")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1643, 698.5)
+shape = SubResource("RectangleShape2D_pl3v4")
+
+[node name="OneWays" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/OneWays"]
+position = Vector2(375, 671)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_po4om")
+one_way_collision = true
+debug_color = Color(0.5613584, 0.39551935, 1, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/OneWays"]
+position = Vector2(803, 458)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_44tn6")
+one_way_collision = true
+debug_color = Color(0.6192919, 0.35545346, 1, 0.41960785)
+
 [node name="Vacuum" type="CharacterBody2D" parent="."]
+position = Vector2(-61, 766)
 script = ExtResource("1_xpeh6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vacuum"]
@@ -21,58 +217,6 @@ shape = SubResource("RectangleShape2D_h77vs")
 [node name="Sprite2D" type="Sprite2D" parent="Vacuum"]
 position = Vector2(366, 212)
 texture = ExtResource("1_h77vs")
-
-[node name="Platforms" type="Node2D" parent="."]
-
-[node name="Floor1" type="StaticBody2D" parent="Platforms"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Floor1"]
-position = Vector2(549, 453)
-shape = SubResource("RectangleShape2D_xpeh6")
-
-[node name="ColorRect" type="ColorRect" parent="Platforms/Floor1"]
-offset_left = 76.0
-offset_top = 429.0
-offset_right = 1022.0
-offset_bottom = 477.0
-
-[node name="Floor1" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1"]
-position = Vector2(519, 925)
-shape = SubResource("RectangleShape2D_xpeh6")
-
-[node name="ColorRect" type="ColorRect" parent="Floor1"]
-offset_left = 46.0
-offset_top = 901.0
-offset_right = 992.0
-offset_bottom = 949.0
-
-[node name="Floor2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
-position = Vector2(1382, 712)
-shape = SubResource("RectangleShape2D_xpeh6")
-
-[node name="ColorRect" type="ColorRect" parent="Floor2"]
-offset_left = 909.0
-offset_top = 688.0
-offset_right = 1855.0
-offset_bottom = 736.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Floor3" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
-position = Vector2(1376, 236)
-shape = SubResource("RectangleShape2D_xpeh6")
-
-[node name="ColorRect" type="ColorRect" parent="Floor3"]
-offset_left = 903.0
-offset_top = 212.0
-offset_right = 1849.0
-offset_bottom = 260.0
-metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Node2D" parent="."]
 
