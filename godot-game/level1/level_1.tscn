@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://gknarqs2e6u7"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Vacuum" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vacuum"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Vacuum"]
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
