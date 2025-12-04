@@ -1,14 +1,78 @@
-[gd_scene format=3 uid="uid://gknarqs2e6u7"]
+[gd_scene load_steps=5 format=3 uid="uid://gknarqs2e6u7"]
+
+[ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level1/art/player-trimmed-canvas.png" id="1_h77vs"]
+[ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level1/vacuum.gd" id="1_xpeh6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h77vs"]
+size = Vector2(120, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpeh6"]
+size = Vector2(946, 48)
 
 [node name="Level1" type="Node2D"]
 
 [node name="Vacuum" type="CharacterBody2D" parent="."]
+script = ExtResource("1_xpeh6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vacuum"]
+position = Vector2(366, 215)
+shape = SubResource("RectangleShape2D_h77vs")
 
 [node name="Sprite2D" type="Sprite2D" parent="Vacuum"]
+position = Vector2(366, 212)
+texture = ExtResource("1_h77vs")
 
 [node name="Platforms" type="Node2D" parent="."]
+
+[node name="Floor1" type="StaticBody2D" parent="Platforms"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/Floor1"]
+position = Vector2(549, 453)
+shape = SubResource("RectangleShape2D_xpeh6")
+
+[node name="ColorRect" type="ColorRect" parent="Platforms/Floor1"]
+offset_left = 76.0
+offset_top = 429.0
+offset_right = 1022.0
+offset_bottom = 477.0
+
+[node name="Floor1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1"]
+position = Vector2(519, 925)
+shape = SubResource("RectangleShape2D_xpeh6")
+
+[node name="ColorRect" type="ColorRect" parent="Floor1"]
+offset_left = 46.0
+offset_top = 901.0
+offset_right = 992.0
+offset_bottom = 949.0
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
+position = Vector2(1382, 712)
+shape = SubResource("RectangleShape2D_xpeh6")
+
+[node name="ColorRect" type="ColorRect" parent="Floor2"]
+offset_left = 909.0
+offset_top = 688.0
+offset_right = 1855.0
+offset_bottom = 736.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
+position = Vector2(1376, 236)
+shape = SubResource("RectangleShape2D_xpeh6")
+
+[node name="ColorRect" type="ColorRect" parent="Floor3"]
+offset_left = 903.0
+offset_top = 212.0
+offset_right = 1849.0
+offset_bottom = 260.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Node2D" parent="."]
 
