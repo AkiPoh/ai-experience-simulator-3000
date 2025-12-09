@@ -48,10 +48,23 @@ expand_mode = 3
 
 [node name="Level1Button" type="Button" parent="."]
 layout_mode = 0
+offset_left = 188.0
+offset_top = 206.0
+offset_right = 751.0
+offset_bottom = 489.0
+theme = SubResource("Theme_6nwqt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pbjm4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_svuvw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_juveg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_g18jx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6nwqt")
+
+[node name="Level2Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 187.0
-offset_top = 374.0
+offset_top = 670.0
 offset_right = 750.0
-offset_bottom = 657.0
+offset_bottom = 953.0
 theme = SubResource("Theme_6nwqt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_pbjm4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_svuvw")

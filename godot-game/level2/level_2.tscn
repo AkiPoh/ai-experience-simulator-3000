@@ -1,0 +1,431 @@
+[gd_scene load_steps=33 format=3 uid="uid://gknarqs2e6u7"]
+
+[ext_resource type="Texture2D" uid="uid://dkoc1clcp6fw1" path="res://level2/art/level1-main.png" id="1_4hwfk"]
+[ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level2/art/player-trimmed-canvas.png" id="1_h77vs"]
+[ext_resource type="Script" uid="uid://dokvx3kb8fcvf" path="res://level2/level_2.gd" id="1_mh48n"]
+[ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level2/robot.gd" id="1_xpeh6"]
+[ext_resource type="PackedScene" uid="uid://dv6hsgtmmsv84" path="res://level2/coin/coin.tscn" id="2_v8of2"]
+[ext_resource type="Texture2D" uid="uid://cxvmhq4gu1dus" path="res://level2/coin/art/coin.png" id="6_atmxi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hwfk"]
+size = Vector2(633, 87)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8of2"]
+size = Vector2(391, 78)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpbvg"]
+size = Vector2(355, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh48n"]
+size = Vector2(595, 67)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atmxi"]
+size = Vector2(210, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsgr5"]
+size = Vector2(261, 77)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veygh"]
+size = Vector2(174, 73)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1vqm"]
+size = Vector2(1163, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wflk4"]
+size = Vector2(611, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esv77"]
+size = Vector2(116, 238)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hevts"]
+size = Vector2(139, 228)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wq6b"]
+size = Vector2(61, 677)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3wtg"]
+size = Vector2(65, 354)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx3jx"]
+size = Vector2(62, 597)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8eyt"]
+size = Vector2(62, 461)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0qb0"]
+size = Vector2(59, 219)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q62cn"]
+size = Vector2(65, 337)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6nmd"]
+size = Vector2(87, 801)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fww16"]
+size = Vector2(317, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjslg"]
+size = Vector2(372, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwwve"]
+size = Vector2(157, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_faqjo"]
+size = Vector2(175, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl3v4"]
+size = Vector2(196, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_po4om"]
+size = Vector2(149, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44tn6"]
+size = Vector2(349, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h77vs"]
+size = Vector2(120, 34)
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_mh48n")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_4hwfk")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="WallsEtc" type="Node2D" parent="."]
+
+[node name="FloorsCeilings" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(297, 1047)
+shape = SubResource("RectangleShape2D_4hwfk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(802.5, 1051)
+shape = SubResource("RectangleShape2D_v8of2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1168.5, 1054)
+shape = SubResource("RectangleShape2D_gpbvg")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1631.5, 1059.5)
+shape = SubResource("RectangleShape2D_mh48n")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1272, 808)
+shape = SubResource("RectangleShape2D_atmxi")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(174.5, 669.5)
+shape = SubResource("RectangleShape2D_bsgr5")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1811, 220)
+shape = SubResource("RectangleShape2D_veygh")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(635.5, 29)
+shape = SubResource("RectangleShape2D_s1vqm")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="WallsEtc/FloorsCeilings"]
+position = Vector2(1558.5, 25.5)
+shape = SubResource("RectangleShape2D_wflk4")
+
+[node name="Fridges" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Fridges"]
+position = Vector2(605, 908)
+shape = SubResource("RectangleShape2D_esv77")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Fridges"]
+position = Vector2(926.5, 912)
+shape = SubResource("RectangleShape2D_hevts")
+
+[node name="Walls" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(26.5, 336.5)
+shape = SubResource("RectangleShape2D_2wq6b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(25.5, 847)
+shape = SubResource("RectangleShape2D_w3wtg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(989, 725.5)
+shape = SubResource("RectangleShape2D_sx3jx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1236, 227.5)
+shape = SubResource("RectangleShape2D_r8eyt")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1347.5, 933.5)
+shape = SubResource("RectangleShape2D_d0qb0")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1894.5, 149.5)
+shape = SubResource("RectangleShape2D_q62cn")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="WallsEtc/Walls"]
+position = Vector2(1886.5, 647.5)
+shape = SubResource("RectangleShape2D_f6nmd")
+
+[node name="Platforms" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(601.5, 668)
+shape = SubResource("RectangleShape2D_fww16")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(446, 450)
+shape = SubResource("RectangleShape2D_yjslg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1400.5, 285)
+shape = SubResource("RectangleShape2D_wwwve")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1411.5, 496)
+shape = SubResource("RectangleShape2D_faqjo")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="WallsEtc/Platforms"]
+position = Vector2(1643, 698.5)
+shape = SubResource("RectangleShape2D_pl3v4")
+
+[node name="OneWays" type="StaticBody2D" parent="WallsEtc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsEtc/OneWays"]
+position = Vector2(375, 671)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_po4om")
+one_way_collision = true
+debug_color = Color(0.5613584, 0.39551935, 1, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WallsEtc/OneWays"]
+position = Vector2(803, 458)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_44tn6")
+one_way_collision = true
+debug_color = Color(0.6192919, 0.35545346, 1, 0.41960785)
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(93, 963)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(160, 963)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(404, 961)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(459, 961)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(510, 960)
+
+[node name="Coin9" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(571, 749)
+
+[node name="Coin10" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(638, 751)
+
+[node name="Coin11" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(711, 966)
+
+[node name="Coin12" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(801, 968)
+
+[node name="Coin13" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(879, 759)
+
+[node name="Coin14" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(930, 759)
+
+[node name="Coin15" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(732, 593)
+
+[node name="Coin16" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(665, 592)
+
+[node name="Coin17" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(599, 591)
+
+[node name="Coin18" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(531, 591)
+
+[node name="Coin19" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(465, 591)
+
+[node name="Coin20" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(276, 594)
+
+[node name="Coin21" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(212, 591)
+
+[node name="Coin22" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(153, 589)
+
+[node name="Coin23" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(95, 588)
+
+[node name="Coin24" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(288, 377)
+
+[node name="Coin25" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(347, 376)
+
+[node name="Coin26" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(409, 375)
+
+[node name="Coin27" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(465, 375)
+
+[node name="Coin28" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(525, 376)
+
+[node name="Coin29" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(597, 377)
+
+[node name="Coin30" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(985, 387)
+
+[node name="Coin31" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1345, 743)
+
+[node name="Coin32" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1276, 742)
+
+[node name="Coin33" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1195, 741)
+
+[node name="Coin34" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1062, 975)
+
+[node name="Coin35" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1135, 976)
+
+[node name="Coin36" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1204, 973)
+
+[node name="Coin37" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1274, 971)
+
+[node name="Coin38" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1414, 980)
+
+[node name="Coin39" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1482, 980)
+
+[node name="Coin40" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1544, 978)
+
+[node name="Coin41" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1610, 979)
+
+[node name="Coin42" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1673, 979)
+
+[node name="Coin43" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1735, 977)
+
+[node name="Coin44" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1800, 975)
+
+[node name="Coin45" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1579, 628)
+
+[node name="Coin46" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1646, 628)
+
+[node name="Coin47" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1715, 630)
+
+[node name="Coin48" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1354, 427)
+
+[node name="Coin49" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1414, 431)
+
+[node name="Coin50" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1477, 430)
+
+[node name="Coin51" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1400, 215)
+
+[node name="Coin52" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1455, 216)
+
+[node name="Coin53" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1756, 142)
+
+[node name="Coin54" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1825, 143)
+
+[node name="Coin55" parent="Coins" instance=ExtResource("2_v8of2")]
+position = Vector2(1341, 215)
+
+[node name="Vacuum" type="CharacterBody2D" parent="."]
+position = Vector2(-76, 768)
+script = ExtResource("1_xpeh6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vacuum"]
+position = Vector2(366, 215)
+shape = SubResource("RectangleShape2D_h77vs")
+
+[node name="Sprite2D" type="Sprite2D" parent="Vacuum"]
+position = Vector2(366, 212)
+texture = ExtResource("1_h77vs")
+
+[node name="CoinCounter" type="Label" parent="."]
+offset_left = 145.0
+offset_top = 85.0
+offset_right = 367.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 71
+text = "0"
+
+[node name="LevelTitle" type="Label" parent="."]
+offset_left = 481.0
+offset_top = 108.0
+offset_right = 1067.0
+offset_bottom = 205.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 71
+text = "FIND THE PHONE"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(110, 133)
+texture = ExtResource("6_atmxi")
+
+[node name="WinOverlay" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="WinBackground" type="ColorRect" parent="WinOverlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7372549, 0.7372549, 0.7372549, 0.26666668)
+
+[node name="WinLabel" type="Label" parent="WinOverlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 131
+text = "ALL COINS COLLECTED AND 
+FLOORS VACUUMED!
+[returning to menu....]"
+horizontal_alignment = 1
+vertical_alignment = 1
