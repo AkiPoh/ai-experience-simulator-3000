@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dkoc1clcp6fw1" path="res://level2/art/level1-main.png" id="1_4hwfk"]
 [ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level2/art/player-trimmed-canvas.png" id="1_h77vs"]
-[ext_resource type="Script" uid="uid://dokvx3kb8fcvf" path="res://level1/level_1.gd" id="1_mh48n"]
-[ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level2/robot.gd" id="1_xpeh6"]
+[ext_resource type="Script" path="res://level1/level_1.gd" id="1_mh48n"]
+[ext_resource type="Script" path="res://level2/robot.gd" id="1_xpeh6"]
 [ext_resource type="PackedScene" uid="uid://dv6hsgtmmsv84" path="res://level2/coin/coin.tscn" id="2_v8of2"]
 [ext_resource type="Texture2D" uid="uid://cxvmhq4gu1dus" path="res://level2/coin/art/coin.png" id="6_atmxi"]
 

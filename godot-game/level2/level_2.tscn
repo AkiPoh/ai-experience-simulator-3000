@@ -1,11 +1,11 @@
 [gd_scene load_steps=34 format=3 uid="uid://gknarqs2e6u7"]
 
-[ext_resource type="Texture2D" uid="uid://dkoc1clcp6fw1" path="res://level2/art/level1-main.png" id="1_4hwfk"]
-[ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level2/art/player-trimmed-canvas.png" id="1_h77vs"]
+[ext_resource type="Texture2D" uid="uid://cdocttgukt10b" path="res://level2/art/level1-main.png" id="1_4hwfk"]
+[ext_resource type="Texture2D" uid="uid://by2ofb1p033ks" path="res://level2/art/player-trimmed-canvas.png" id="1_h77vs"]
 [ext_resource type="Script" uid="uid://dokvx3kb8fcvf" path="res://level2/level_2.gd" id="1_mh48n"]
 [ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level2/robot.gd" id="1_xpeh6"]
-[ext_resource type="Texture2D" uid="uid://1dh3cq8j4yku" path="res://level2/art/plant.png" id="3_0hshn"]
-[ext_resource type="Texture2D" uid="uid://cxvmhq4gu1dus" path="res://level2/coin/art/coin.png" id="6_atmxi"]
+[ext_resource type="Texture2D" uid="uid://dyj1r0nt4wpng" path="res://level2/art/plant.png" id="3_0hshn"]
+[ext_resource type="Texture2D" uid="uid://ceyp6figwmokn" path="res://level2/coin/art/coin.png" id="6_atmxi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hwfk"]
 size = Vector2(633, 87)
@@ -273,6 +273,7 @@ theme_override_font_sizes/font_size = 71
 text = "FIND THE PHONE"
 
 [node name="WinOverlay" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="WinBackground" type="ColorRect" parent="WinOverlay"]
 anchors_preset = 15
@@ -290,7 +291,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 25
 theme_override_font_sizes/font_size = 131
-text = "THE PHONE HAS 
+text = "THE PHONE HAS
 BEEN FOUND
 [returning to menu...]"
 horizontal_alignment = 1
