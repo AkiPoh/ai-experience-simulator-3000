@@ -15,11 +15,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://menu/menu.tscn")
 
 
 func _on_coin_collected(body: Node, coin: Node) -> void:
-	if body == $Vacuum:
+	if body == $Robot:
 		coins_collected += 1
 		coin.queue_free()
 		$CoinCounter.text = str(coins_collected) + "/" + str(total_coins)
