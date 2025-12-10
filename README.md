@@ -6,14 +6,14 @@ A satirical 2D platformer about the mundane reality of AI.
 
 ## About
 
-Ever wondered what it's like to be an AI? Spoiler: it's probably mostly chores, (outside of what "@grok what is 1+3" when doing homework /s).
+Ever wondered what it's like to be an AI? Spoiler: it's probably mostly chores, (outside of "@grok what is 1+3" when doing homework /s).
 
 Play as household robots performing incredibly important tasks like vacuuming floors. Experience the thrilling life of artificial intelligence through the lens of domestic servitude.
 
 ## Levels
 
 **Level 1 - Vacuum the Floor**  
-You're a typical robot vacuum. Collect all 52 dust particles, that oddly resemble gold coins. You can jump, at least 3m high. Don't ask why.
+You're a typical robot vacuum. Collect all 52 dust particles, that oddly resemble gold coins. You can jump, at least 2m high. Don't ask why.
 
 ## Controls
 
