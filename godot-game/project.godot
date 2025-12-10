@@ -13,7 +13,7 @@ config_version=5
 config/name="AI Experience Simulator 3000"
 run/main_scene="uid://de21gadp3ouci"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://bqha2pmpvhsww"
 
 [display]
 
