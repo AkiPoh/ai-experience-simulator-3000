@@ -17,6 +17,7 @@ You're a typical robot vacuum. Collect all 52 dust particles, that oddly resembl
 
 - **Left & Right Arrows / A & D Keys** - Move Side to Side
 - **Space / W Key / Up Arrow** - Jump
+- **Esc Key** - Return to Main Menu from Level
 
 ## Running the Game (WIP)
 
