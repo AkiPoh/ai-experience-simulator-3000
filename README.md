@@ -2,6 +2,8 @@
 
 A satirical 2D platformer about the mundane reality of AI.
 
+![Main menu of AI Experience Simulator 3000](godot-game/menu/art/menu-bg.png)
+
 ## About
 
 Ever wondered what it's like to be an AI? Spoiler: it's probably mostly chores, (outside of what "@grok what is 1+3" when doing homework /s).
