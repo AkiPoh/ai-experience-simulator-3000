@@ -1,10 +1,12 @@
-[gd_scene load_steps=33 format=3 uid="uid://gknarqs2e6u7"]
+[gd_scene load_steps=35 format=3 uid="uid://gknarqs2e6u7"]
 
 [ext_resource type="Texture2D" uid="uid://dkoc1clcp6fw1" path="res://level1/art/level1-main.png" id="1_4hwfk"]
 [ext_resource type="Texture2D" uid="uid://devy77ikw2ajr" path="res://level1/art/player-trimmed-canvas.png" id="1_h77vs"]
 [ext_resource type="Script" uid="uid://dokvx3kb8fcvf" path="res://level1/level_1.gd" id="1_mh48n"]
 [ext_resource type="Script" uid="uid://dbtvs1x27mc1e" path="res://level1/vacuum.gd" id="1_xpeh6"]
 [ext_resource type="PackedScene" uid="uid://dv6hsgtmmsv84" path="res://level1/coin/coin.tscn" id="2_v8of2"]
+[ext_resource type="Texture2D" uid="uid://canagepuhd8st" path="res://level1/art/plant.png" id="3_atmxi"]
+[ext_resource type="Texture2D" uid="uid://15ye8q6ttxa4" path="res://level1/art/home-poster.png" id="4_bsgr5"]
 [ext_resource type="Texture2D" uid="uid://cxvmhq4gu1dus" path="res://level1/coin/art/coin.png" id="6_atmxi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hwfk"]
@@ -92,6 +94,22 @@ script = ExtResource("1_mh48n")
 texture = ExtResource("1_4hwfk")
 centered = false
 metadata/_edit_lock_ = true
+
+[node name="Plant" type="Sprite2D" parent="."]
+position = Vector2(535, 330)
+texture = ExtResource("3_atmxi")
+
+[node name="Plant2" type="Sprite2D" parent="."]
+position = Vector2(1712, 949)
+texture = ExtResource("3_atmxi")
+
+[node name="Plant3" type="Sprite2D" parent="."]
+position = Vector2(1402, 170)
+texture = ExtResource("3_atmxi")
+
+[node name="HomePoster" type="Sprite2D" parent="."]
+position = Vector2(790, 290)
+texture = ExtResource("4_bsgr5")
 
 [node name="WallsEtc" type="Node2D" parent="."]
 
@@ -413,9 +431,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 25
-theme_override_font_sizes/font_size = 131
-text = "ALL COINS COLLECTED AND 
-FLOORS VACUUMED!
-[returning to menu....]"
+theme_override_font_sizes/font_size = 121
+text = "ALL COINS COLLECTED
+AND FLOORS VACUUMED!
+[returning to menu...]"
 horizontal_alignment = 1
 vertical_alignment = 1
