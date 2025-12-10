@@ -19,15 +19,15 @@ You're a typical robot vacuum. Collect all 52 dust particles, that oddly resembl
 - **Space / W Key / Up Arrow** - Jump
 - **Esc Key** - Return to Main Menu from Level
 
-## Running the Game (WIP)
+## Running the Game
 
-Download the latest release from itch.io (WIP), or build the game with Godot.
+Download the latest release from GitHub Releases (https://github.com/AkiPoh/ai-experience-simulator-3000/releases), or build the game with Godot.
 
 ## Tools
 
 * Git
   * Used for version control
-  * Combined with a private GitHub repository
+  * Combined GitHub
 * Godot 4.5.1
   * Game engine
   * In Godot import `./godot-game/` folder to get started
