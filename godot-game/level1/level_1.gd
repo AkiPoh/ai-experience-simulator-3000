@@ -19,13 +19,6 @@ func _ready() -> void:
 	coin_counter.text = str(coins_collected) + "/" + str(total_coins)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("escape"):
-		_load_menu()
-
-
-
 func _on_coin_collected(body: Node, coin: Node) -> void:
 	if body == $Vacuum:
 		coins_collected += 1
@@ -39,6 +32,11 @@ func _on_level_complete() -> void:
 	win_overlay.visible = true
 	await get_tree().create_timer(5).timeout
 	_load_menu()
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("escape"):
+		_load_menu()
 
 
 func _load_menu() -> void:
