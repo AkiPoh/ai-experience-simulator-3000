@@ -23,6 +23,7 @@ You're a typical robot vacuum. Collect all 52 dust particles, that oddly resembl
 - **Esc Key** - Return to Main Menu from Level
 - **F11 / O Key** - Toggle Fullscreen
 - **Enter / Space Key** - Select Menu Item (first item auto-focused on menu startup)
+- **Esc Key (Hold 1 Second)** - Quit Game from Main Menu
 
 **Controller**
 
@@ -31,6 +32,7 @@ You're a typical robot vacuum. Collect all 52 dust particles, that oddly resembl
 - **PS: Touchpad / XBOX: Menu / NIN: + Button** - Return to Main Menu from Level
 - **PS: Select / XBOX: Back / NIN: - Button** - Toggle Fullscreen
 - **PS: X / XBOX: A / NIN: B Button** - Select Menu Item (first item auto-focused on menu startup)
+- **PS: Touchpad / XBOX: Menu / NIN: + Button (Hold 1 Second)** - Quit Game from Main Menu
 
 ("NIN" short for Nintendo Switch controller.)
 
