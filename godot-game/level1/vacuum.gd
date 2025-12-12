@@ -22,6 +22,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		# SPEED * X (int), smaller X is slower reduction in velocity per
 		# frame when not pressing
-		velocity.x = move_toward(velocity.x, 0, SPEED * 20) 
+		velocity.x = move_toward(velocity.x, 0, SPEED * 20 * delta) 
 
 	var _collided: bool = move_and_slide()

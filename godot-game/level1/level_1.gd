@@ -22,9 +22,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("return_to_menu"):
-		var err: Error = get_tree().change_scene_to_file("res://menu/menu.tscn")
-		if err != OK:
-			push_error("Failed to to load menu")
+		_load_menu()
 
 
 
@@ -40,6 +38,10 @@ func _on_coin_collected(body: Node, coin: Node) -> void:
 func _on_level_complete() -> void:
 	win_overlay.visible = true
 	await get_tree().create_timer(5).timeout
+	_load_menu()
+
+
+func _load_menu() -> void:
 	var err: Error = get_tree().change_scene_to_file("res://menu/menu.tscn")
 	if err != OK:
-		push_error("Failed to to load menu")
+		push_error("Failed to load menu")
