@@ -1,9 +1,13 @@
 extends Control
 
 
+@onready var first_button = $Level1Button # Used for selection on scene loading
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Level1Button.pressed.connect(_on_level1_pressed)
+	first_button.grab_focus()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

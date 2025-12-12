@@ -15,14 +15,13 @@ border_color = Color(0.8, 0.8, 0.8, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_juveg"]
 bg_color = Color(1, 1, 1, 0.20392157)
-border_color = Color(0.8, 0.8, 0.8, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g18jx"]
 bg_color = Color(0.9941737, 0.35788846, 0.4236439, 0.45882353)
 border_color = Color(0.8, 0.8, 0.8, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6nwqt"]
-bg_color = Color(1, 1, 1, 0.21176471)
+bg_color = Color(0.6, 0.6, 0.6, 0)
 border_color = Color(0.8, 0.8, 0.8, 0)
 
 [node name="menu" type="Control"]
