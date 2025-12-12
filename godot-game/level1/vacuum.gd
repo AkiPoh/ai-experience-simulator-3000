@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-		# SPEED * X (int), smaller X is slower reduction in vecolocity per
+		# SPEED * X (int), smaller X is slower reduction in velocity per
 		# frame when not pressing
 		velocity.x = move_toward(velocity.x, 0, SPEED * 20) 
 

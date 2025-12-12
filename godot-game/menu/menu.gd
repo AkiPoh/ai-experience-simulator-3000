@@ -10,10 +10,5 @@ func _ready() -> void:
 	first_button.grab_focus()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
 func _on_level1_pressed() -> void:
 	get_tree().change_scene_to_file("res://level1/level_1.tscn")

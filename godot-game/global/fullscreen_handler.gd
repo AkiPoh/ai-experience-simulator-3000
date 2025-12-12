@@ -6,11 +6,6 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS # Ensures works even when paused
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_fullscreen"):
 		toggle_fullscreen()
