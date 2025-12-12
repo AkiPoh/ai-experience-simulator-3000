@@ -53,11 +53,16 @@ Download the latest release from GitHub Releases (https://github.com/AkiPoh/ai-e
 
 ## Project Structure
 ```
-/                      # Project root
-├── README.md          # This README.md
-├── art/               # Affinity asset source files
-└── godot-game/        # Import this with Godot
+/                       # Project root
+├── README.md           # This README.md
+├── art/                # Affinity asset source files
+└── godot-game/         # Import this with Godot
     ├── project.godot
-    ├── menu/          # Menu scene
-    ├── level1/        # Level 1 scene
+    ├── global/         # Autoload scripts (singletons)
+    ├── menu/           # Menu scene
+    │   └── art/        # Compiled art assets
+    └── level1/         # Level 1 scene
+        ├── art/        # Compiled art assets
+        └── coin/       # Coin scene
+            └── art/    # Compiled art assets
 ```
