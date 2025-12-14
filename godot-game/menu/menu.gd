@@ -4,7 +4,7 @@ extends Control
 @onready var first_button: Button = $Level1Button
 
 var cancel_hold_time: float = 0.0
-const QUIT_HOLD_DURATION: float = 1.0
+const QUIT_HOLD_DURATION: float = 0.5
 
 
 func _ready() -> void:
